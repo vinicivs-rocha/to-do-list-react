@@ -1,17 +1,19 @@
 import React, {useState} from 'react'
 
 const Form = (props) => {
+    // Estado da tarefa em criação
     const [currentInputItem, setCurrentInputItem] = useState('')
-
+    // Envia os dados colocados no formulário para o estado
     function handleInput(event) {
         let input = event.target.value
         setCurrentInputItem(input)
     }
-
     function handleClick(event) {
         event.preventDefault()
+        // Caso hajam dados no formulário, cria-se uma nota tarefa
         if (currentInputItem) {
             props.addItem(currentInputItem)
+            // Limpa o buffer
             setCurrentInputItem('')
         }
     }

@@ -4,6 +4,7 @@ import Card from './Card'
 const ListItem = (props) => {
     return (
         <li >
+            {/* Muda a classe da tarefa conforme seu status armazenado */}
             <Card className={`item ${props.item.done ? 'done' : 'undone'}`}>
                 {props.item.text}
                 <div>

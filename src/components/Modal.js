@@ -2,9 +2,9 @@ import React from 'react'
 import Card from './Card'
 
 const Modal = (props) => {
+    // Caso o usuário clique fora do card de adição, fechará o modal
     function handleModalClick(e) {
         let target = e.target
-        console.log(target)
         if (target.id == 'modal'){
             props.changeModalVisibility()
         }
