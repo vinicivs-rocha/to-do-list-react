@@ -1,0 +1,159 @@
+/* Estilo da página. */
+.container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 600px;
+    margin: auto;
+}
+
+#pageTitle {
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho. */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+header button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: limegreen;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Estilo do modal */
+
+.hidden {
+    display: none!important;
+}
+
+#modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#modalCard {
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#modalCard h1 {
+    align-self: center;
+    justify-self: flex-start;
+}
+
+/* Estilo do formulário. */
+
+#itemForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    justify-self: center;
+}
+
+#itemForm #task{
+    width: 70%;
+    max-width: 80%;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid transparent 1px;
+    padding: 10px;
+    transition: border .3s;
+}
+
+#itemForm #task::placeholder{
+    font-size: 20px;
+}
+
+#itemForm #task:focus {
+    outline: none;
+    border-bottom: solid lightgray 1px;
+}
+
+#itemForm button {
+    border: none;
+    border-radius: 5px;
+    background-color: limegreen;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#itemForm button:hover {
+    cursor: pointer;
+}
+
+#itemForm button:active {
+    background-color: green;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da lista. */
+
+#itemsList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#itemsList li {
+    width: 100%;
+}
+
+#itemsList .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    font-size: 20px;
+}
+
+#itemsList .done {
+    background-color: darkcyan;
+    color: white;
+    text-decoration: line-through;
+}
+
+#itemsList .item button {
+    border: none;
+    background-color: transparent;
+}
+
+#itemsList img {
+    height: 32px;
+    width: 32px;
+}
